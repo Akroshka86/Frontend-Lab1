@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8В14_Вавилов Михаил_ЛБ1</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+
+    <div class="container">
+        <div class="column">
+            <h2>Форма регистрации</h2>
+            <div class="registration-container">
+                <form id="inputForm">
+                    <label for="key">Ключ:</label>
+                    <input type="text" id="key" name="key">
+                    <span id="keyError" class="error-message"></span><br>
+
+                    <label for="firstName">Значение:</label>
+                    <input type="text" id="firstName" name="firstName">
+                    <span id="firstNameError" class="error-message"></span>                   
+                    <button type="button" onclick="addProperty()">Добавить</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="column">
+            <h2>Извлечение значения по ключу</h2>
+            <div class="registration-container">
+                <form id="outputForm">        
+                    <label for="requestedKey">Введите ключ для извлечения имени:</label>
+                    <input type="text" id="requestedKey" name="requestedKey">
+                    <button type="button" onclick="extractValue()">Извлечь</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="column">
+            <h2>Информация</h2>
+            <div class="registration-container">
+                <form id="inputForm">
+                    <label class="labelInput">Ключ:</label>
+                    <div id="key1"></div><br>
+
+                    <label class="labelInput">Значение:</label>
+                    <div id="firstName1"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
